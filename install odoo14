@@ -11,17 +11,17 @@ credit to : https://tutorialopenerp.wordpress.com/2021/02/18/odoo-14-instalasi-o
 #kemudian membuar folder project 
 #berikut ini adalah langkah-langkah nya
 
-1. Buat folder odoo di direktori Home kita
-2. Masuk ke dalam folder odoo lalu buat 3 folder lagi yaitu : addons, source, conf
-3. Pindahkan file hasil download (ODOO14) ke dalam folder odoo dan extract file tersebut. File zip nya bisa dimasukan ke folder source untuk arsip
-4. Masuk ke folder hasil extract dan rename folder di dalamnya menjadi odoo-14.0. Lalu keluarkan folder itu (cut) agar sejajar dengan source, conf, dan addons
-5. Masuk ke dalam folder odoo-14.0 lalu masuk lagi ke dalam folder setup
+1. Create an Odoo folder in our Home directory
+2. Masuk ke dalam folder odoo lalu buat 3 folders lagi yaitu: addons, source, conf
+3. Move the downloaded file (ODOO14) to the Odoo folder and extract the file. File zip nya bisa dimasukan ke folder source untuk arsip
+4. Go to the extracted folder and rename the folder inside it to Odoo-14.0. Lalu keluarkan folder itu (cut) agar sejajar dengan source, conf, dan addons
+5. Enter the odoo-14.0 folder and enter the setup folder
 6. Copas file odoo ke path yang sama lalu rename menjadi odoo-server
-7. Klik kanan file odoo-server lalu pilih Properties dan berikan centang pada checkbox Allow Execute…
-8. Pindahkan file odoo-server ke luar folder setup
-9. Buat 3 folder baru di dalam folder addons, yaitu : TELKOM, ANTAM, dan PINDAD
-10. Buat 3 file baru di dalam folder conf, yaitu : odoo-telkom.conf, odoo-antam.conf, dan odoo-pindad.conf
-11. Masing-masing isi file conf sebagai berikut :
+7. Klik kanan file odoo-server lalu pilih Properties dan berikan centang pada checkbox Allow Execute...
+8. Move the odoo-server file to the outer folder setup
+9. Create 3 new folders in the addons folder, namely: TELKOM, ANTAM, and PINDAD
+10. Create 3 new files in the conf folder, namely: odoo-telkom.conf, odoo-antam.conf, and odoo-pindad.conf
+11. Masing-masing isi file conf as follows:
 
 odoo-telkom.conf
 [options]
