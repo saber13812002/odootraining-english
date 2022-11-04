@@ -1,27 +1,29 @@
 #download odoo14 
 
+orginal Indonesian language article here: https://github.com/ditobasworo/odootraining/blob/924bd491ee41a3f7d9216f9e3a04f8a345825335/install%20odoo14
+
 wget https://nightly.odoo.com/14.0/nightly/src/odoo_14.0.latest.tar.gz
 
-#tunggu sampai proses download selesai
+#wait until the download process is complete
 
-#setelah proses download selesai selanjutnya masuk ke download lalu instal secara GUI (menggunakan mouse dan keyboard)
+# after the download is complete then go to download and install it in a GUI (using mouse and keyboard)
 
 credit to : https://tutorialopenerp.wordpress.com/2021/02/18/odoo-14-instalasi-odoo-14-pada-ubuntu-desktop-20-04/
 
-#kemudian membuar folder project 
-#berikut ini adalah langkah-langkah nya
+#then create a project folder
+#the following are the steps
 
-1. Create an Odoo folder in our Home directory
-2. Masuk ke dalam folder odoo lalu buat 3 folders lagi yaitu: addons, source, conf
-3. Move the downloaded file (ODOO14) to the Odoo folder and extract the file. File zip nya bisa dimasukan ke folder source untuk arsip
-4. Go to the extracted folder and rename the folder inside it to Odoo-14.0. Lalu keluarkan folder itu (cut) agar sejajar dengan source, conf, dan addons
-5. Enter the odoo-14.0 folder and enter the setup folder
-6. Copas file odoo ke path yang sama lalu rename menjadi odoo-server
-7. Klik kanan file odoo-server lalu pilih Properties dan berikan centang pada checkbox Allow Execute...
-8. Move the odoo-server file to the outer folder setup
+1. Create an odoo folder in our Home directory
+2. Go to the odoo folder then create 3 more folders, namely: addons, source, conf
+3. Move the downloaded file (ODOO14) into the odoo folder and extract the file. The zip file can be put in the source folder for archives
+4. Go to the extracted folder and rename the folder in it to odoo-14.0. Then remove the folder (cut) to align with source, conf, and addons
+5. Enter the odoo-14.0 folder and then enter the setup folder again
+6. Copy the odoo file to the same path and rename it to odoo-server
+7. Right-click the odoo-server file and select Properties and tick the Allow Execute… checkbox.
+8. Move the odoo-server file outside the setup folder
 9. Create 3 new folders in the addons folder, namely: TELKOM, ANTAM, and PINDAD
 10. Create 3 new files in the conf folder, namely: odoo-telkom.conf, odoo-antam.conf, and odoo-pindad.conf
-11. Masing-masing isi file conf as follows:
+11. Each of the contents of the conf file as follows:
 
 odoo-telkom.conf
 [options]
@@ -51,13 +53,13 @@ db_user = odoo
 db_password = odoo
 addons_path = /home/USER_LAPTOP/odoo/addons/PINDAD
 
-Catatan :
+Notes :
 
-– Jangan lupa gunakan password superadmin untuk membuat database baru.
-– Nama folder TELKOM, ANTAM, dan PINDAD menandakan nama project yang sedang kita handle.
-– Folder project berfungsi untuk menampung modul-modul custom yang kita kembangkan untuk project terkait.
-– Nama file conf : odoo-telkom.conf, odoo-antam.conf, dan odoo-pindad.conf mengikuti nama folder project yang sedang kita handle. Silahkan disesuaikan
-– Silahkan sesuaikan nama USER_LAPTOP dengan user kalian masing-masing. 
-Jika bingung ketik pwd pada terminal, nanti akan terlihat user laptop kita disebelah path home. 
-Jika di laptop saya akan keluar /home/dito. 
-Berarti USER_LAPTOP saya adalah dito
+– Don't forget to use the superadmin password to create a new database.
+– The names of the TELKOM, ANTAM, and PINDAD folders indicate the name of the project we are handling.
+– The project folder serves to accommodate custom modules that we develop for related projects.
+– conf file names: odoo-telkom.conf, odoo-antam.conf, and odoo-pindad.conf following the name of the project folder that we are handling. Please customize
+– Please adjust the name USER_LAPTOP with your respective users.
+If you are confused, type pwd in the terminal, you will see our laptop user next to the home path.
+If on my laptop it will exit /home/dito.
+Means my USER_LAPTOP is dito
